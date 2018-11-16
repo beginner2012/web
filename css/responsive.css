@@ -1,0 +1,101 @@
+/*  WAP主导航 */
+.wapNav{overflow-y:auto;height:100%;opacity:0;transform: translateX(-100%);transition:all 0.6s;background:#333;width:100%;position: fixed;left:0;top:0;z-index: 40;padding:60px 0;}
+.wapNav li{position:relative;}
+.wapNav li a{display:block;padding-left:20px;color:#fff;height:50px;line-height:50px;border-top:1px solid #222;position:relative;}
+.wapNav li i{font-family:"iconfont";color:#888;font-size:1.2em;font-style:normal;padding:0 15px;position:absolute;right:0;top:0px;}
+.wapNav li .cur,.wapNav .cur:hover{background:#01aaed;color:#fff;}
+.wapNav li :hover i,.wapNav .cur i{color:#fff;}
+.wapNav .navSub{display:none;background:#161616;}
+.wapNav .navSub li a{height:40px;line-height:40px;padding-left:40px;font-size:.875em;}
+.wapNav .navSub ul{background:#050505;}
+.wapNav .navSub ul li a{height:34px;line-height:34px;padding-left:60px;}
+.wapNav .menu{overflow:hidden;font-size:1rem;background:#222;}
+.wapNav .menu a{float:left;width:50%;text-align:center;line-height:50px;border-right:1px solid #000;color:#fff;border-top:1px solid #000;color:#fff;}
+.wapNav .menu a i{font-family:"iconfont";margin-right:5px;position:relative;font-style:normal;color:#fff;font-size:1.4rem;top:3px;}
+.wSearch{background:#222;height:80px;overflow:hidden;padding:0 15px;}
+.wSearch form{margin:0 auto;margin-top:15px;background:#fff;height:40px;overflow:hidden;padding-right:60px;}
+.wSearch .sear_text{width:100%;float:left;height:40px; line-height:40px;color:#666; padding-left:10px;}
+.wSearch .sear_btn{ float:left;width:60px;height:40px; cursor:pointer;text-align:center;background:#333;color:#fff;font-size:16px;transition:all 0.3s;margin-right:-60px;}
+.wSearch .sear_btn:hover{background:#014099;}
+
+
+
+@media all and (max-width:1600px) {
+  .container{padding-left:30px;padding-right:30px;}
+}
+
+@media all and (max-width:1440px) {
+.nav{font-size:1rem;}
+.nav .m{padding-left:45px;}
+
+}
+
+@media all and (max-width:1200px) {
+  .aboutBox1,.team{padding-left:15px;padding-right:15px;}
+  .team ul{margin-right:-30px;}
+  .team li{padding-right:30px;}
+}
+
+
+@media all and (max-width:1024px) {
+  
+ .aboutBox1{font-size:.875rem;
+
+}
+
+@media all and (max-width:920px) {
+ body{padding-top:60px;}
+ .headR,.nav{display:none;}
+ .header{height:60px;line-height:60px;position:fixed;padding:0 15px;top:0;left:0;}
+ .header .logo{position: static;line-height:60px;width:auto;border-right:none;height:60px;}
+ .header .logo img{height:30px;}
+ .navTrigger{display:block;}
+ .nav_on{opacity:1;transform: translateX(0);}
+ .banner .swiper-button-next,.banner .swiper-button-prev{display:none;}
+ .container{padding-left:15px;padding-right:15px;}
+ .topBar{display:none;}
+ .footer{text-align:center;max-height:100%;}
+ .footer .footIcon,.footer .font,.footer .right{float:none;width:100%;text-align:center;}
+ .footer .footIcon li{display:inline-block;float:none;}
+ .team ul{margin-right:-15px;}
+ .team li{width:50%;margin-bottom:30px;padding-right:15px;}
+
+}
+
+@media all and (max-width:768px) {
+  .listWrap{font-size:.75rem;padding-top:40px;padding-bottom:40px;}
+  .jobTop,.jobList li{padding-bottom:40px;margin-bottom:40px;}
+  .banner .pic{display:none;}
+  .banner .wap{display:block;}
+  .listBanner{height:400px;}
+  .listBanner h4{font-size:1.6rem;}
+  .listBanner h4 span{padding:30px 50px;}
+  .listBanner h4 span:after,.listBanner h4 span:before{width:28px;height:20px;}
+  .product li{padding-left:0;height:auto;background:#f5f5f5;}
+  .product li .pImg{float:none;width:100%;height:100%;padding-top:100%;margin-left:0;}
+  .product li .font{height:auto;}
+  .listTie{margin-bottom:40px;font-size:1.75rem;}
+  .historyMenu .swiper-button-next, .historyMenu .swiper-button-prev{font-size:46px;top:37px;}
+  .historyMenu .swiper-button-next{right:-6px;}
+  .historyMenu{font-size:1.5em;margin-bottom:30px;overflow:hidden;}
+  .historyMain li{padding-left:340px;}
+  .historyMain .pic{width:340px;margin-left:-340px;}
+  .aboutBox{padding-top:40px;padding-bottom:40px;font-size:.75rem;}
+
+}
+
+@media all and (max-width:640px) {
+  .footer .font p span:nth-child(3){display:block;}
+  .listBanner{height:280px;}
+  .listBanner h4{font-size:1.25rem;}
+  .history .aboutBox{padding-bottom:0;}
+  .historyMain .txt,.historyMain .bgImg{width:100%;float:none;display:block;}
+  .historyMain .pic{width:100%;margin-left:0;float:none;height:auto;}
+  .historyMain .txt{padding:8% 5%;}
+  .historyMain li{height:auto;padding-left:0;background:#f1f1f1;}
+}
+
+@media all and (max-width:480px) {
+ .listBanner{height:220px;}
+}
+

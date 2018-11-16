@@ -1,0 +1,129 @@
+@charset "utf-8";
+body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,div,span,a,aside,article,section,header,nav,footer,label,img{margin:0;padding:0;box-sizing:border-box;}
+fieldset,img{border:0;}
+img{vertical-align:middle;max-width:100%;}
+ol,ul,li{list-style-type:none;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input,select,textarea{font-size:.875rem;font-family:inherit;margin:0;outline:none;resize:none;border:none;background:none;}
+.clearfix:after{clear:both;content:".";display:block;height:0;overflow:hidden;visibility:hidden;}
+.clearfix{zoom:1;}
+html{verflow:-Scroll;overflow-x:hidden;zoom:1;overflow-y:scroll;overflow:-moz-scrollbars-vertical;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+body{color:#565656;line-height:1.5;font-family:'Microsoft Yahei',Arial,'simsun',HELVETICA;min-width:320px;}
+a{color:#565656;text-decoration:none;transition:all ease 0.3s;}
+a:hover{color:#000;}
+html,body{position:relative;font-size:100%;height: 100%;}
+
+/* CSS活动的公共样式 */
+.fl{float:left;}
+.fr{float:right;}
+.ce{text-align:center;}
+.hide{overflow:hidden;}
+.mb15{margin-bottom:15px;}
+.mb30{margin-bottom:30px;}
+.container{position:relative;min-width:320px;padding:0 60px;width:100%;}
+.pImg{position:relative;padding-top:100%;display:block;overflow:hidden;}
+.pImg img{position:absolute;top:0;left:0;width:100%;height:100%;transition:all 0.5s;}
+.bgImg{background-position:center;background-size:cover;position:relative;transition:all 0.5s;display:block;width:100%;height:100%;}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 918318 */
+  src: url('//at.alicdn.com/t/font_918318_opzowwau3d.eot');
+  src: url('//at.alicdn.com/t/font_918318_opzowwau3d.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_918318_opzowwau3d.woff') format('woff'),
+  url('//at.alicdn.com/t/font_918318_opzowwau3d.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_918318_opzowwau3d.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  position:relative;
+}
+
+
+/* 顶部 */
+.topBar{height:32px;line-height:32px;background:#f3f3f3;font-size:.75rem;overflow:hidden;}
+.topBar span{font-size:.813rem;margin-left:20px;}
+.topBar span i{font-family:"iconfont";margin-right:5px;color:#222;font-style:normal;font-size:1rem;}
+.topBar .email i{top:2px;position:relative;}
+
+/* 头部 */
+.header{height:80px;position:relative;z-index:99;line-height:80px;background:#fff;}
+.logo{float: left;height:80px;}
+.nav{max-width:1200px;height:80px;font-size:1.125rem;}
+.nav .m{float:left;padding-left:60px;text-align:center;position:relative;height:80px;}
+.nav .m>a{color:#333;position:relative;z-index:2;display:block;}
+.nav .m>a:after{content:"";position:absolute;left:0;bottom:0;height:1px;background:#0591d8;width:100%;transition: transform 0.3s;transform:scale(0,1);transform-origin:right bottom;}
+.nav .m:hover>a,.nav .cur>a,.nav .on>a,.nav .m:hover>a i,.nav .cur>a i,.nav .on>a i{color:#0591d8;}
+.nav .m:hover>a:after,.nav .on>a:after{transform:scale(1);transform-origin:left bottom;}
+
+
+/*  导航按钮 */
+.navTrigger{position:absolute;top:22px;right:15px;width:28px;overflow:hidden;white-space:nowrap;color:transparent;z-index:20;cursor:pointer;display:none;}
+.navTrigger span{display:block;height:2px;background:#0591d8;margin-bottom:6px;transition:all 0.3s;  -webkit-transform-origin: 0% 50%;-moz-transform-origin: 0% 50%; -ms-transform-origin: 0% 50%;-o-transform-origin: 0% 50%;transform-origin: 0% 50%;}
+.navTrigger span:nth-child(3){margin-bottom:0;}
+.navTrigger-on span:nth-child(1){transform: translateX(4px) translateY(0px) rotate(45deg);}
+.navTrigger-on span:nth-child(2){opacity:0;}
+.navTrigger-on span:nth-child(3){transform:translateX(2px) translateY(2px) rotate(-45deg);}
+
+/* 广告轮播图 */
+.banner{position:relative;overflow:hidden;height:100%;width: 100%;}
+.banner img{width:100%;height:100%;}
+.swiper-wrapper{transition-timing-function: ease-in-out;}
+.banner li,.banner li a{display:block;height:100%;background-position:center;background-repeat: no-repeat;-webkit-background-size:cover;background-size:cover;}
+.banner .swiper-pagination-bullet{background:#fff;opacity:.8;width:40px;height:3px;border-radius:0;cursor:pointer;}
+.banner .swiper-pagination-white .swiper-pagination-bullet-active{background:#01aaed;opacity:1;}
+
+.banner .swiper-button-next,.banner .swiper-button-prev{background: url('../images/banBtn.png') no-repeat;width:110px;height:50px;left:0;opacity:1;}
+.banner .swiper-button-next{background-position: -110px 0;left:auto;right:0;}
+.banner .swiper-button-prev:hover{background-position:-220px 0;}
+.banner .swiper-button-next:hover{background-position:-330px 0;}
+
+
+/*底部 */
+.footer{background:#f5f5f5;overflow:hidden;padding:15px 60px;font-size:.75rem;max-height:70px;}
+.footer .font p{line-height:1.8;}
+.footer .font i{font-style:normal;font-family:"iconfont";color:#555;font-size:1rem;margin-right:10px;}
+.footer .font p span{margin-left:15px;}
+.footIcon{font-family:"iconfont";font-size:1.5rem;text-align:right;margin-bottom:6px;}
+.footIcon li{margin-left:10px;display:inline-block;}
+.footIcon li a:hover{color:#01aaed;}
+@media all and (max-width:920px) {
+ .footer{max-height:100%;}
+ .footer .right,.footer .font{float:none;width:100%;text-align:center;}
+
+}
+
+
+/* 内页公用 */
+.listWrap{padding-top:60px;padding-bottom:60px; max-width:1200px;margin:0 auto;font-size:.875rem;}
+.listBanner{height:500px;background-position:center;background-repeat: no-repeat;position:relative;}
+.listBanner h4{top:30%;position:absolute;left:50%;color:#fff;font-size:2.625em;letter-spacing:9px;width:100%;max-width:1040px;top:50%;transform: translate(-50%,-50%);text-align:center;}
+.listBanner h4 span{display:inline-block;position:relative;padding:45px 80px;}
+.listBanner h4 span:after,.listBanner h4 span:before{content:"";position:absolute;left:0;top:0;width:38px;height:30px;background: url('../images/l_icon.png') no-repeat;background-size:cover;}
+.listBanner h4 span:before{right:0;left:auto;bottom:0;top:auto;background-image: url('../images/r_icon.png');}
+@keyframes left
+{
+  0%   {opacity:0; left:20%;}
+  100%  {opacity:1; left:50%; }
+}
+
+
+
+/*  招聘 */
+.jobTop{font-size:1.2em;border-bottom:1px solid #ebebeb;padding-bottom:85px;margin-bottom:85px;}
+.jobTop span{margin-right:10px;}
+.jobTop a{margin-right:10px;}
+.jobTop a.on,.jobA .on{color:#00a0e6;}
+.jobTop p{margin-top:25px;}
+.jobList li{border-bottom:1px solid #ebebeb;padding-bottom:70px;margin-bottom:70px;}
+.jobList li h3{font-size:2em;color:#00a0e6;}
+.jobList li dt{font-size:1.33em;margin-top:20px;margin-bottom:10px;}
+.jobList li dd{padding-left:30px;}
+.backTop{position:fixed;width:50px;z-index:30;right:50%;top:60%;margin-right:-650px;opacity:.8;display:none;}
+.backTop:hover{opacity:1;}
