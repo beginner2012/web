@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>卷积首页</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<link rel="stylesheet" href="css/swiper.min.css" />
+<script type="text/javascript" src="js/include.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<!--[if lte IE 8]><script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script><![endif]-->
+<!--[if lte IE 8]><script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+
+
+<body>
+<!--头部-->
+<header class="header container">
+    <h1 class="logo fl"><a href="index.html"><img src="images/logo.png" alt="上海卷积文化有限公司官方网站" title="{$site_name}" height="45"></a></h1>
+    <!-- PC导航 -->
+    <nav class="nav fr">
+      <ul class="navMain">
+        <li class="m cur"><a href="index.html">首页</a></li>
+        <li  class="m"><a href="product.html">产品服务</a></li>
+        <li class="m"><a href="about.html">关于我们</a></li>
+        <li class="m"><a href="join.html">加入我们</a></li>
+      </ul>
+    </nav>
+    <!--   导航开关 -->
+    <div class="navTrigger"><span></span><span></span><span></span></div>
+</header>
+<!-- 手机端导航 -->
+<div class="wapNav">
+  <nav>
+  <li class="m"><a href="index.html" class="cur">首页<i>&#xe6ab;</i></a></li>
+  <li class="m"><a href="product.html">产品服务<i>&#xe6ab;</i></a></li>
+  <li class="m"><a href="about.html">关于我们<i>&#xe6ab;</i></a></li>
+  <li class="m"><a href="join.html">加入我们<i>&#xe6ab;</i></a></li>
+  </nav>
+  <div class="menu"><a href="{$site_jd}"><i>&#xe649;</i>服务热线</a><a href="{$site_tm}"><i>&#xe614;</i>邮箱咨询</a></div>
+</div>
+<!-- 轮播图 -->
+<section class="banner">
+  <ul class="swiper-wrapper">
+    <li class="swiper-slide"><a href="#" style="background-image: url(images/banner.jpg);"></a></li>
+    <li class="swiper-slide"><a href="#" style="background-image: url(images/banner2.jpg);"></a></li>
+    <li class="swiper-slide"><a href="#" style="background-image: url(images/banner3.jpg);"></a></li>
+  </ul>
+  <div class="swiper-pagination swiper-pagination-white"></div>
+</section>
+<!-- 底部 -->
+<include src="footer.html"></include>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/selectivizr.js"></script>
+</body>
+</html>
